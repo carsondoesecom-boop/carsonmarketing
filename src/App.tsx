@@ -8,6 +8,7 @@ import { Instagram, ChevronRight, X } from "lucide-react";
 import { CurvedDivider } from "./components/CurvedDivider";
 import { PopupButton, Widget } from "@typeform/embed-react";
 import { useState } from "react";
+import logo from "./assets/logo.png";
 
 export default function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -49,7 +50,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src="/logo.png" 
+            src={logo} 
             alt="Carson Marketing Logo" 
             className="h-10 w-auto object-contain"
             referrerPolicy="no-referrer"
