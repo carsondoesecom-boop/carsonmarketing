@@ -15,6 +15,17 @@ export default function App() {
 
   useEffect(() => {
     document.title = "Carson Marketing";
+    
+    // Set favicon
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (link) {
+      link.href = logo;
+    } else {
+      const newLink = document.createElement("link");
+      newLink.rel = "icon";
+      newLink.href = logo;
+      document.head.appendChild(newLink);
+    }
   }, []);
 
   const TypeformModal = () => (
