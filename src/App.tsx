@@ -8,7 +8,6 @@ import { Instagram, ChevronRight, X } from "lucide-react";
 import { CurvedDivider } from "./components/CurvedDivider";
 import { PopupButton, Widget } from "@typeform/embed-react";
 import { useState, useEffect } from "react";
-import logo from "./assets/logo.png";
 
 export default function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -17,13 +16,14 @@ export default function App() {
     document.title = "Carson Marketing";
     
     // Set favicon
+    const logoUrl = "/logo.png";
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
     if (link) {
-      link.href = logo;
+      link.href = logoUrl;
     } else {
       const newLink = document.createElement("link");
       newLink.rel = "icon";
-      newLink.href = logo;
+      newLink.href = logoUrl;
       document.head.appendChild(newLink);
     }
   }, []);
@@ -65,7 +65,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img 
-            src={logo} 
+            src="/logo.png" 
             alt="Carson Marketing Logo" 
             className="h-10 w-auto object-contain"
             referrerPolicy="no-referrer"
@@ -166,7 +166,10 @@ export default function App() {
             <h2 className="text-white text-3xl md:text-5xl text-center mb-16">
               Maintaining a 7x ROAS in the span of months...
             </h2>
-            {/* Image removed */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <img src="/results-1.jpg" alt="Result 1" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
+              <img src="/results-2.jpg" alt="Result 2" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
+            </div>
           </div>
         </section>
 
@@ -215,7 +218,9 @@ export default function App() {
         <section className="bg-black text-white py-24 px-6">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl mb-16">Extra $50k in revenue?</h2>
-            {/* Image removed */}
+            <div className="max-w-3xl mx-auto mb-16">
+              <img src="/results-3.jpg" alt="Revenue Results" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
+            </div>
             
             <p className="text-xl mb-12 text-gray-400">Trusted by over 22 reputable brands worldwide</p>
             
