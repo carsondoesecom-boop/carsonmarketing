@@ -166,10 +166,6 @@ export default function App() {
             <h2 className="text-white text-3xl md:text-5xl text-center mb-16">
               Maintaining a 7x ROAS in the span of months...
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <img src="/results-1.jpg" alt="Result 1" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
-              <img src="/results-2.jpg" alt="Result 2" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
-            </div>
           </div>
         </section>
 
@@ -218,9 +214,6 @@ export default function App() {
         <section className="bg-black text-white py-24 px-6">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl mb-16">Extra $50k in revenue?</h2>
-            <div className="max-w-3xl mx-auto mb-16">
-              <img src="/results-3.jpg" alt="Revenue Results" className="rounded-2xl w-full" referrerPolicy="no-referrer" />
-            </div>
             
             <p className="text-xl mb-12 text-gray-400">Trusted by over 22 reputable brands worldwide</p>
             
