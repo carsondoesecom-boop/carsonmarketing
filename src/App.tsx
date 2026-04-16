@@ -7,11 +7,15 @@ import { motion, AnimatePresence } from "motion/react";
 import { Instagram, ChevronRight, X } from "lucide-react";
 import { CurvedDivider } from "./components/CurvedDivider";
 import { PopupButton, Widget } from "@typeform/embed-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "./assets/logo.png";
 
 export default function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = "Carson Marketing";
+  }, []);
 
   const TypeformModal = () => (
     <AnimatePresence>
