@@ -66,7 +66,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/logo.png"
+            src="/logo.png?v=2"
             alt="Carson Marketing"
             className="h-20 w-auto border-4 border-red-500 bg-white object-contain"
             referrerPolicy="no-referrer"
