@@ -64,12 +64,16 @@ export default function App() {
       <TypeformModal />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <div className="flex items-center gap-4">
           <img
             src="/images/carson-nav-logo.png"
             alt="Carson Marketing"
             className="h-10 w-auto object-contain"
-            referrerPolicy="no-referrer"
+          />
+          <img
+            src="/images/test-logo.svg"
+            alt="Test"
+            className="h-10 w-auto"
           />
         </div>
         <button 
