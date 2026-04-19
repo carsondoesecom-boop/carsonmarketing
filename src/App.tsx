@@ -16,13 +16,14 @@ export default function App() {
     document.title = "Carson Marketing";
     
     // Set favicon
+    const logoUrl = "/logo.png";
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
     if (link) {
-      link.href = ;
+      link.href = logoUrl;
     } else {
       const newLink = document.createElement("link");
       newLink.rel = "icon";
-      newLink.href = ;
+      newLink.href = logoUrl;
       document.head.appendChild(newLink);
     }
   }, []);
@@ -68,8 +69,7 @@ export default function App() {
             alt="Carson Marketing"
             className="h-10 w-auto object-contain"
             referrerPolicy="no-referrer"
-            />
-          
+          />
         </div>
         <button 
           onClick={() => setIsFormOpen(true)}
