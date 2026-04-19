@@ -66,9 +66,13 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/logo.png?v=2"
+            src="/logo.png?v=3"
             alt="Carson Marketing"
             className="h-20 w-auto border-4 border-red-500 bg-white object-contain"
+            onError={(e) => {
+              e.currentTarget.src = "https://picsum.photos/seed/carson/200/80";
+              e.currentTarget.style.border = "4px solid orange";
+            }}
             referrerPolicy="no-referrer"
           />
         </div>
