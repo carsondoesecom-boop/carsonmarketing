@@ -22,8 +22,9 @@ export const CurvedDivider: React.FC<CurvedDividerProps> = ({
         viewBox="0 0 1440 120" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full h-auto"
+        className="w-full h-auto translate-y-[1px] scale-y-[1.1] origin-center"
         preserveAspectRatio="none"
+        shapeRendering="geometricPrecision"
       >
         {type === 'bottom' ? (
           <path 

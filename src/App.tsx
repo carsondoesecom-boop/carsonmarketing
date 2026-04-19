@@ -60,7 +60,7 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-brand-grey">
+    <div className="min-h-[100dvh] flex flex-col bg-black">
       <TypeformModal />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
@@ -80,7 +80,7 @@ export default function App() {
         </button>
       </nav>
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow pt-20 bg-brand-grey">
         {/* Hero Section */}
         <section className="bokeh-bg min-h-[85vh] flex flex-col items-start justify-center px-8 md:px-16 lg:px-32 py-20 relative">
           <motion.h1 
@@ -117,7 +117,7 @@ export default function App() {
         </section>
 
         {/* Transition: White to Black */}
-        <div className="bg-black">
+        <div className="bg-black -mt-1 relative z-10">
           <CurvedDivider type="bottom" color="#f5f5f5" />
         </div>
 
@@ -170,8 +170,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* Transition: Black to White */}
-        <div className="bg-brand-grey">
+        {/* Transition: Black to White (Tools) */}
+        <div className="bg-brand-grey -mt-1 relative z-10">
           <CurvedDivider type="bottom" color="black" />
         </div>
 
@@ -209,7 +209,10 @@ export default function App() {
           </div>
         </section>
 
-        <CurvedDivider type="bottom" color="#f5f5f5" />
+        {/* Transition: White to Black (Revenue) */}
+        <div className="bg-black -mt-1 relative z-10">
+          <CurvedDivider type="bottom" color="#f5f5f5" />
+        </div>
 
         {/* Revenue Section */}
         <section className="bg-black text-white py-24 px-6">
@@ -240,8 +243,8 @@ export default function App() {
           </div>
         </section>
 
-        {/* Transition: Black to White */}
-        <div className="bg-brand-grey">
+        {/* Transition: Black to White (CTA) */}
+        <div className="bg-brand-grey -mt-1 relative z-10">
           <CurvedDivider type="bottom" color="black" />
         </div>
 
@@ -269,9 +272,9 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <div className="bg-black">
+      <div className="bg-black relative z-10 -mt-1">
         <CurvedDivider type="bottom" color="#f5f5f5" />
-        <footer className="py-12 px-6 flex flex-col items-center gap-8">
+        <footer className="py-20 px-6 flex flex-col items-center gap-8 bg-black">
           <a 
             href="https://www.instagram.com/carson.marketing/" 
             target="_blank" 
