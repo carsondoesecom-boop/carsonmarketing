@@ -17,14 +17,14 @@ export default function App() {
     document.title = "Carson Marketing";
     
     // Set favicon
-    const logoUrl = "/logo.png";
+    const logoPath = "/logo.svg";
     const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement;
     if (link) {
-      link.href = logoUrl;
+      link.href = logoPath;
     } else {
       const newLink = document.createElement("link");
       newLink.rel = "icon";
-      newLink.href = logoUrl;
+      newLink.href = logoPath;
       document.head.appendChild(newLink);
     }
   }, []);
@@ -66,7 +66,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/logo.png"
+            src="/logo.svg"
             alt="Carson Marketing"
             className="h-10 w-auto object-contain"
             referrerPolicy="no-referrer"
