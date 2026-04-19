@@ -68,7 +68,7 @@ export default function App() {
           <img
             src="/logo.png"
             alt="Carson Marketing"
-            className="h-10 w-auto object-contain"
+            className="h-20 w-auto border-4 border-red-500 bg-white object-contain"
             referrerPolicy="no-referrer"
           />
         </div>
