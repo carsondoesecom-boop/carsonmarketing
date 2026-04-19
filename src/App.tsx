@@ -13,6 +13,7 @@ export default function App() {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   useEffect(() => {
+    // Carson Marketing - Force Refresh
     document.title = "Carson Marketing";
     
     // Set favicon
