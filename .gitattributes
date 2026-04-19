@@ -4,3 +4,5 @@
 *.jpeg binary
 *.gif binary
 *.ico binary
+*.svg text
+*.webp binary
