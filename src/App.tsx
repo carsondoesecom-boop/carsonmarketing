@@ -17,7 +17,7 @@ export default function App() {
     document.title = "Carson Marketing";
     
     // Set favicon
-    const logoPath = "/images/carson-nav-logo.png";
+    const logoPath = "/logo-new.png";
     const link = document.querySelector("link[rel*='icon']") as HTMLLinkElement;
     if (link) {
       link.href = logoPath;
@@ -64,16 +64,12 @@ export default function App() {
       <TypeformModal />
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-grey/80 backdrop-blur-md px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center gap-4">
+        <div className="flex items-center">
           <img
-            src="/images/carson-nav-logo.png"
+            src="/logo-new.png"
             alt="Carson Marketing"
             className="h-10 w-auto object-contain"
-          />
-          <img
-            src="/images/test-logo.svg"
-            alt="Test"
-            className="h-10 w-auto"
+            referrerPolicy="no-referrer"
           />
         </div>
         <button 
